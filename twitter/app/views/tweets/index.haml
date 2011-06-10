@@ -1,0 +1,21 @@
+%h1 Ćwierknięcia
+
+%h3 Ilość wszystkich ćwierknięć
+
+%p= @total
+
+%h3 Ostatnie 20 ćwierknięć
+
+%table
+  %tr
+    %th ID
+    %th Username
+    %th Message
+
+  = @tweets.each do |tweet|
+    %tr
+      %td= tweet.id
+      %td
+        %strong= tweet.username
+      %td= tweet.message
+

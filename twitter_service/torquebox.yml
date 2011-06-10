@@ -1,0 +1,10 @@
+services:
+  JavaTwitterService:
+    keywords:
+      - ejb
+      - java
+      - cdi
+      - beer
+      - oracle
+    queue: tweets
+
