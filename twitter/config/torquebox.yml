@@ -1,6 +1,6 @@
 messaging:
-  tweets:                             # nazwa kolejki
-    TweetProcessor:                   # nazwa klasy
+  tweets:                             # queue name
+    TweetProcessor:                   # processor class name
       filter: "language = 'java'"     # JMS message selector
 
 jobs:

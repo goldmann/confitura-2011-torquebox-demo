@@ -80,7 +80,7 @@
                 </executions>
             </plugin>
         </plugins>
-        <finalName>ejb</finalName>
+        <finalName>cdi</finalName>
     </build>
     <packaging>ejb</packaging>
 </project>
