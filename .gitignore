@@ -1,2 +1,5 @@
 cdi/target
 jboss_as
+/twitter_service/Gemfile.lock
+.torquespec
+Gemfile.lock
