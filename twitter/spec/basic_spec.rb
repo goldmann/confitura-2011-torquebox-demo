@@ -1,30 +1,16 @@
 require 'spec_helper'
 require 'open-uri'
 
-# The twitter consumption service 
-service = <<-END.gsub(/^ {4}/,'')
-    application:
-      root: #{File.dirname(__FILE__)}/../../twitter_service
-    queues:
-      tweets:
-    environment:
-      USERNAME: "#{ENV['USERNAME']}"
-      PASSWORD: "#{ENV['PASSWORD']}"
-END
-
-# The application's user interface
-frontend = <<-END.gsub(/^ {4}/,'')
-    application:
-      root: #{File.dirname(__FILE__)}/..
-    queues:
-      tweets:
-END
-
 # A remote group nested within a local on
 describe "end-to-end testing" do 
 
   # Deploy our apps
-  deploy service, frontend
+  deploy <<-END.gsub(/^ {4}/,'')
+    application:
+      root: #{File.dirname(__FILE__)}/..
+    queues:
+      tweets:
+  END
 
   # Runs locally
   it "web tests" do
