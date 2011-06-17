@@ -22,6 +22,8 @@ describe "end-to-end testing" do
   it "should retrieve the index using a Capybara DSL" do
     visit "/tweets"
     page.should have_content( "Last 20 tweets" )
+    page.find("h1").text.should == "Tweets"
+    page.find("table")[:class].should be_nil
     puts "", page.source, ""
   end
 
