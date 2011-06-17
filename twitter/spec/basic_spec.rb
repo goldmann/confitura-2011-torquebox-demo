@@ -13,13 +13,13 @@ describe "end-to-end testing" do
   END
 
   # Runs locally
-  it "web tests" do
+  it "should retrieve the index" do
     response = open("http://localhost:8080/tweets") {|f| f.read}
     response.should include( "Last 20 tweets" ) 
   end
 
   # Runs locally using capybara DSL
-  it "should work" do
+  it "should retrieve the index using a Capybara DSL" do
     visit "/tweets"
     page.should have_content( "Last 20 tweets" )
     puts "", page.source, ""
