@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'open-uri'
 
-# A remote group nested within a local on
+# A remote group nested within a local one
 describe "end-to-end testing" do 
 
   # Deploy our apps
