@@ -36,7 +36,7 @@ describe "end-to-end testing" do
       inject('deployment-unit').should_not be_nil
       inject('service-registry').should_not be_nil
       TorqueBox::ServiceRegistry.lookup("jboss.messaging.jms.manager").should_not be_nil
-      # inject( Java::pl.goldmann.confitura.beans.TweetReader ).should_not be_nil
+      inject( Java::pl.goldmann.confitura.beans.TweetReader ).should_not be_nil
     end
   end
 
