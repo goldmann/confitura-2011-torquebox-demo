@@ -20,7 +20,6 @@ class JavaTwitterService
 
   def stop
     @done = true
-    @thread.join
   end
 
   def run
