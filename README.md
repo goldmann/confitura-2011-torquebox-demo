@@ -1,0 +1,1 @@
+Refer to [TorqueBox: A Javaist's Tutorial on Messaging, Services and CDI in Ruby ](http://torquebox.org/news/2011/06/13/torquebox-a-javaists-tutorial-on-messaging-services-and-cdi-in-ruby/) post for detailed instructions how to use this repository.
