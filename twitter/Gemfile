@@ -28,11 +28,12 @@ gem 'rails', '3.0.8'
 # and rake tasks are available in development mode:
 group :development, :test do
   gem 'torquespec', ">= 0.3.5"
+  gem 'torquebox', "~> 2.x.incremental.00"
   gem 'capybara'
   gem 'akephalos'
 end
 
-gem "activerecord-jdbc-adapter", :require => "arjdbc"
+gem "activerecord-jdbc-adapter", "= 1.1.1", :require => "arjdbc"
 gem "jdbc-sqlite3"
 gem "jruby-openssl"
 gem "torquebox", "~> 2.x.incremental.00"
