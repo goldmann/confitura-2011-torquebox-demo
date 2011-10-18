@@ -13,7 +13,7 @@ public class TweetReader {
     private EntityManager entityManager;
     
     public List<Tweet> read() throws Exception {
-        int maxResults = 20;
+        int maxResults = 10;
         
         List<Tweet> tweets = (List<Tweet>) entityManager.createQuery("from Tweet t order by t.id desc").setMaxResults(maxResults).getResultList();
         
