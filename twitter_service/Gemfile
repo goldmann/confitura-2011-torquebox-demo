@@ -1,5 +1,4 @@
 source "http://rubygems.org"
-gem "tweetstream"
 gem "torquebox", "~> 2.x.incremental.00"
 
 group :development, :test do

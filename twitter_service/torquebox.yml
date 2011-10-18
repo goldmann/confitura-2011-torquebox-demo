@@ -1,9 +1,11 @@
 services:
-  JavaTwitterService:
-    keywords:
-      - ejb
-      - java
-      - cdi
-      - beer
-    queue: tweets
+  twitter:
+    service: JavaTwitterService
+    config:
+      keywords:
+        - ejb
+        - java
+        - cdi
+        - beer
+      queue: tweets
 
